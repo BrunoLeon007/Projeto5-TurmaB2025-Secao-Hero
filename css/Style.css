@@ -19,13 +19,13 @@ body{
 /*2. ESTILOS DA SEÇÃO HERO - O FOCO DO ESTUDO */
 .hero-section{
    
-    background-color: #323f4c; /*Um fundo para criar contraste */
+    background-color: #eaedf0; /*Um fundo para criar contraste */
     
     /*Usamos o Flexbox aqui para centralizar o container de conteudo verticalmente * isso é util se quisermos que a seção ocupe a tela inteira */
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(/assets/Imagem-Principal.jpg.webp);
+    background-image: url(/assets/06-57-07-12_512.webp  );
     /*Define uma altura minima para a seção, igual a altura da janela de visualização * Isso faz com que a seção Hero ocupe a tela inteira verticalmente*/
     min-height: 100vh;
     background-size: cover;
@@ -73,13 +73,31 @@ body{
     padding: 15px, 30px;  /* O padding cria o "corpo" do botão ao redor do texto */
       /* ----- Animação suave ----- */
     transition: background-color 0.3s, transform 0.2s;
+    border-color: #f8f9fa;
 }
 
 /*EFEITO DE HOVER PARA O BOTÃO */
 .hero-button:hover{
     background-color: #0056b3; /*Auzl escuro*/
     transform: translateY(-2px);
+    padding: 15, 30px;
+
 }
+
+.btn{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+
+    & a:last-child{
+        background-color: transparent;
+        border: 2px solid #f8f9fa;
+        border-radius: 5px;
+       
+    }
+}
+
+
 
 
 
